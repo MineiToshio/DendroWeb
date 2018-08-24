@@ -1,0 +1,302 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="Dendro.Website2.PL.Web.site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dendro</title>
+    <meta charset="UTF-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0' />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel='stylesheet' href='css/validationEngine.jquery.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/testimonials-widget.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/normalize.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/prettyPhoto.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/grid-system.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/shortcodes.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/widgets.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/media.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+    <link rel="stylesheet" type="text/css" href="css/fullwidth.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/social.css" media="screen" />
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/comment-reply.min.js'></script>
+    <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false&amp;ver=3.5.1'></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+    <link media="screen" type="text/css" rel="stylesheet" href="css/wpgmappity-post-styles.css" />
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,700" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="home page page-id-92 page-template page-template-template-homepage-php no-sidebar w1170 sticky-menu-on woocommerce woocommerce-page">
+    <form id="form1" runat="server">
+        <header class='page-header'>
+            <div class='wrapper wrapper-bg'>
+                <div class='container'>
+                    <div class='grid_12'>
+                        <div class='logo'>
+                            <a href='/inicio' title="Dendro SAC" rel="home">
+                                <img src="images/Logo.png"  alt="Dendro SAC" />
+                            </a>
+                        </div>
+                        <ul style="float:right;">
+                            <li style="margin-top:35px;">
+                                <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/www.dendro.us" target="_blank"></a>
+                                <a class="twitterBtn smGlobalBtn" href="https://twitter.com/DendroSac" target="_blank"></a>
+                                <a class="instagramBtn smGlobalBtn" href="http://instagram.com/dendrosac/" target="_blank"></a>
+                                <a class="googleplusBtn smGlobalBtn" href="https://plus.google.com/u/0/110957943820352342966/posts?cfem=1" target="_blank"></a>
+                                <a class="youtubeBtn smGlobalBtn" href="https://www.youtube.com/channel/UCMbQ9L0sSq4-OGg11LiSwjw" target="_blank"></a>
+                                <a class="pinterestBtn smGlobalBtn" href="https://www.pinterest.com/dendros/" target="_blank"></a>
+                                <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/profile/view?id=267335188" target="_blank"></a>
+                                <a class="issuuBtn smGlobalBtn" href="http://www.issuu.com/dendrosac" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='absolute'>
+                <div class='wrapper menu-bg custom-menu-bg border-bottom-black-tr'>
+                    <div class='container'>
+                        <img class="mini_logo tran03slinear" src="images/logo.png" alt="Circles Theme">
+                        <a id="menu-btn" href='#'></a>
+                        <nav class="menu-primary-container">
+                            <ul class="menu" style="text-align:center;">
+                                <li id="liInicio" class="current_page_item"><a href='/inicio'>Inicio</a></li>
+                                <li id="liNosotros">
+                                    <a href='#'>Nosotros</a>
+                                    <ul>
+                                        <li><a href='/historia'>Nuestra Historia</a></li>
+                                        <li><a href='/etica'>Cultura Organizacional</a></li>
+                                        <li><a href='/perfil'>Perfil Corporativo</a></li>
+                                    </ul>
+                                </li>
+                                <li id="liServicios"><a href='/servicios'>Servicios</a></li>
+                                <li id="liProductos"><a href='/productos'>Productos</a></li>
+                                <li id="liMaquinas"><a href='/maquinas'>Máquinas</a></li>
+                                <li id="liRepresentaciones"><a href='/representaciones'>Representaciones</a></li>
+                                <li id="liObras"><a href='/obras'>Obras</a></li>
+                                <li id="liContacto"><a href='/contacto'>Contacto</a></li>
+
+                            </ul>
+                        </nav>
+                        <ul class='socials mobile-socials'>
+                            
+                            <li>
+                                <span class="tran02slinear"></span>
+                                <a class='twitter tran02slinear' href='#' title="Twitter"></a>
+                            </li>
+                            <li>
+                                <span class="tran02slinear"></span>
+                                <a class='skype tran02slinear' href='#'></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="cphTitulo" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="cphBody" runat="server"></asp:ContentPlaceHolder>
+        <footer style="font-size:13px;">
+            <div class='wrapper grey'>
+                <div class='container'>
+                    <div class='grid_3'>
+                        <section id="text-5" class="widget widget_text">
+                            <div class="textwidget">
+                                <img src="images/logo_footer.png" alt="">
+                            </div>
+                            <p style="color:#b4b8bc">Somos líderes en soluciones ambientales y paisajistas, especialistas hidrosiembra, revegetación, reforestación y control de erosión.</p>
+                        </section>
+                    </div>
+                    <div class='grid_3'>
+                        <section id="text-3" class="widget widget_text">
+                            <h2>Mapa de Sitio</h2>
+                            <div class="textwidget">
+                                <ul>
+                                    <li class="mapa-sitio"><a href="/historia">NOSOTROS</a></li>
+                                    <li class="mapa-sitio"><a href="/servicios">SERVICIOS</a></li>
+                                    <li class="mapa-sitio"><a href="/productos">PRODUCTOS</a></li>
+                                    <li class="mapa-sitio"><a href="/maquinas">MÁQUINAS</a></li>
+                                    <li class="mapa-sitio"><a href="/representaciones">REPRESENTACIONES</a></li>
+                                    <li class="mapa-sitio"><a href="/contacto">CONTACTO</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class='grid_3'>
+                        <section id="latest-posts-2" class="widget widget_latest_posts_entries">
+                            <h2>Síguenos</h2>
+                            <ul class="latest-desc">
+                                <li>
+                                    <a href="https://www.facebook.com/www.dendro.us" target="_blank"><img src="images/social/facebook.png" /></a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://twitter.com/DendroSac" target="_blank"><img src="images/social/twitter.png" /></a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="http://instagram.com/dendrosac/" target="_blank"><img src="images/social/instagram.png" /></a>
+                                    <br />
+                                    <a href="https://plus.google.com/u/0/110957943820352342966/posts?cfem=1" target="_blank"><img src="images/social/googleplusalt.png" /></a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.youtube.com/channel/UCMbQ9L0sSq4-OGg11LiSwjw" target="_blank"><img src="images/social/youtube.png" /></a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.pinterest.com/dendros/" target="_blank"><img src="images/social/pinterest.png" /></a>
+                                    <br />
+                                    <a href="https://www.linkedin.com/profile/view?id=267335188" target="_blank"><img src="images/social/linkedin.png" /></a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="http://www.issuu.com/dendrosac" target="_blank"><img src="images/social/issuu.png" /></a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class='grid_3'>
+                        <section id="text-3" class="widget widget_text"><h2>Contacto</h2>
+                            <div class="textwidget">
+                                <address>
+                                    <ul class="address">
+                                        <li>Lima, Perú</li>
+                                        <li>Calle Los Lirios 169</li>
+                                        <li>San Isidro</li>
+                                    </ul>
+                                    <ul class="phone">
+                                        <li>Teléfono: </li>
+                                        <li>(511) 421-2323</li>
+                                    </ul>
+                                    <ul class="email">
+                                        <li><a href="mailto:sales@dendro.us" style="">sales@dendro.us</a></li>
+                                    </ul>
+                                </address>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper dark-grey copyright-bar'>
+                <div class='container'>
+                    <div class='grid_12'>
+                        <span class='copyright'>PÁGINA DESARROLLADA POR <a href="http://www.linnso.com" target="_blank">LINNSO</a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a id="back_to_top" href='#'></a>
+        <script type='text/javascript' src='js/jquery.validationEngine-enfc3c.js?ver=2.4.4'></script>
+        <script type='text/javascript' src='js/jquery.validationEnginefc3c.js?ver=2.4.4'></script>
+        <script type='text/javascript' src='js/front-subscribersfc3c.js?ver=2.4.4'></script>
+        <script type='text/javascript' src='js/main.js'></script>
+        <script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+        <script type='text/javascript' src='js/jquery.flexslider-min.js'></script>
+        <script type='text/javascript' src='js/zozo.tabs.js'></script>
+        <script type='text/javascript' src='js/jquery.isotope.min.js'></script>
+        <script type='text/javascript' src='js/shortcodes.js'></script>
+        <script type='text/javascript' src='js/grayscale.js'></script>
+        <script type='text/javascript' src='js/retina.js'></script>
+
+
+        <script type="text/javascript">
+            var tpj = jQuery;
+
+            tpj.noConflict();
+
+            var revapi1;
+
+            tpj(document).ready(function () {
+
+                if (tpj.fn.cssOriginal != undefined)
+                    tpj.fn.css = tpj.fn.cssOriginal;
+
+                if (tpj('.fullwidthbanner').revolution == undefined)
+                    revslider_showDoubleJqueryError('.fullwidthbanner');
+                else
+                    revapi1 = tpj('.fullwidthbanner').show().revolution(
+                     {
+                         delay: 9000,
+                         startwidth: 1170,
+                         startheight: 450,
+                         hideThumbs: 200,
+
+                         thumbWidth: 100,
+                         thumbHeight: 50,
+                         thumbAmount: 3,
+
+                         navigationType: "none",
+                         navigationArrows: "none",
+                         navigationStyle: "round",
+
+                         touchenabled: "on",
+                         onHoverStop: "on",
+
+                         navigationHAlign: "center",
+                         navigationVAlign: "bottom",
+                         navigationHOffset: 0,
+                         navigationVOffset: 20,
+
+                         soloArrowLeftHalign: "left",
+                         soloArrowLeftValign: "center",
+                         soloArrowLeftHOffset: 20,
+                         soloArrowLeftVOffset: 0,
+
+                         soloArrowRightHalign: "right",
+                         soloArrowRightValign: "center",
+                         soloArrowRightHOffset: 20,
+                         soloArrowRightVOffset: 0,
+
+                         shadow: 0,
+                         fullWidth: "on",
+
+                         stopLoop: "off",
+                         stopAfterLoops: -1,
+                         stopAtSlide: -1,
+
+                         shuffle: "off",
+
+                         hideSliderAtLimit: 0,
+                         hideCaptionAtLimit: 0,
+                         hideAllCaptionAtLilmit: 0,
+                         startWithSlide: 0
+                     });
+            });
+            </script>
+        <script>
+            function seleccionar_menu(menu)
+            {
+                tpj("#liInicio").removeClass("current_page_item");
+                tpj("#liNosotros").removeClass("current_page_item");
+                tpj("#liServicios").removeClass("current_page_item");
+                tpj("#liProductos").removeClass("current_page_item");
+                tpj("#liMaquinas").removeClass("current_page_item");
+                tpj("#liRepresentaciones").removeClass("current_page_item");
+                tpj("#liContacto").removeClass("current_page_item");
+                tpj("#liObras").removeClass("current_page_item");
+
+                switch(menu)
+                {
+                    case 1: tpj("#liInicio").addClass("current_page_item"); break;
+                    case 2: tpj("#liNosotros").addClass("current_page_item"); break;
+                    case 3: tpj("#liServicios").addClass("current_page_item"); break;
+                    case 4: tpj("#liProductos").addClass("current_page_item"); break;
+                    case 5: tpj("#liMaquinas").addClass("current_page_item"); break;
+                    case 6: tpj("#liRepresentaciones").addClass("current_page_item"); break;
+                    case 7: tpj("#liContacto").addClass("current_page_item"); break;
+                    case 8: tpj("#liObras").addClass("current_page_item"); break;
+                }
+            }
+        </script>
+        <asp:ContentPlaceHolder ID="cphFooter" runat="server"></asp:ContentPlaceHolder>
+        <script type="text/javascript">
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-42342647-1', 'dendro.us');
+            ga('send', 'pageview');
+
+        </script>
+    </form>
+</body>
+</html>

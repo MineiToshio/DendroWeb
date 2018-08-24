@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6903B1C5-3429-489C-9FD9-440DE1DF25A3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dendro.Website2.PL.Web</RootNamespace>
+    <AssemblyName>Dendro.Website2.PL.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\arrowleft.html" />
+    <Content Include="assets\arrowright.html" />
+    <Content Include="assets\arrow_left.html" />
+    <Content Include="assets\arrow_left2.html" />
+    <Content Include="assets\arrow_right.html" />
+    <Content Include="assets\arrow_right2.html" />
+    <Content Include="assets\boxed_bgtile.html" />
+    <Content Include="assets\bullet.html" />
+    <Content Include="assets\bullets.html" />
+    <Content Include="assets\bullets2.html" />
+    <Content Include="assets\bullet_boxed.html" />
+    <Content Include="assets\coloredbg.html" />
+    <Content Include="assets\large_left.html" />
+    <Content Include="assets\large_right.html" />
+    <Content Include="assets\loader.html" />
+    <Content Include="assets\navigdots.html" />
+    <Content Include="assets\navigdots_bgtile.html" />
+    <Content Include="assets\shadow1.html" />
+    <Content Include="assets\shadow2.html" />
+    <Content Include="assets\shadow3.html" />
+    <Content Include="assets\small_left.html" />
+    <Content Include="assets\small_left_boxed.html" />
+    <Content Include="assets\small_right.html" />
+    <Content Include="assets\small_right_boxed.html" />
+    <Content Include="assets\timer.html" />
+    <Content Include="contacto.aspx" />
+    <None Include="css\font-awesome.css-" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\fullwidth.css" />
+    <Content Include="css\grid-system.css" />
+    <Content Include="css\images\bx_loader.gif" />
+    <Content Include="css\images\controls.png" />
+    <Content Include="css\images\sprite\sprite.html" />
+    <Content Include="css\images\toggles\toggle-closed.html" />
+    <Content Include="css\images\toggles\toggle-open.html" />
+    <Content Include="css\jquery.bxslider.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\media.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\settings.css" />
+    <Content Include="css\shortcodes.css" />
+    <Content Include="css\social.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\testimonials-widget.css" />
+    <Content Include="css\validationEngine.jquery.css" />
+    <Content Include="css\widgets.css" />
+    <Content Include="css\woocommerce.css" />
+    <Content Include="css\wp-content\themes\circles\css\PIE.html" />
+    <Content Include="css\wpgmappity-post-styles.css" />
+    <Content Include="default.aspx" />
+    <Content Include="fonts\star-2.html" />
+    <Content Include="fonts\star-3.html" />
+    <Content Include="fonts\star-4.html" />
+    <Content Include="fonts\star.html" />
+    <Content Include="fonts\stard41d.html" />
+    <Content Include="font\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\allowed.png" />
+    <Content Include="images\clientes\Aceros Arequipa.png" />
+    <Content Include="images\clientes\Antamina.png" />
+    <Content Include="images\clientes\Barrick.png" />
+    <Content Include="images\clientes\Buenaventura.png" />
+    <Content Include="images\clientes\Camargo Correa.png" />
+    <Content Include="images\clientes\Consorsio Minero Horizonte.PNG" />
+    <Content Include="images\clientes\Country Club Villa.png" />
+    <Content Include="images\clientes\El Brocal.png" />
+    <Content Include="images\clientes\Hudbay.png" />
+    <Content Include="images\clientes\JJC Contratistas.png" />
+    <Content Include="images\clientes\Los Portales.png" />
+    <Content Include="images\clientes\Lumina Copper.png" />
+    <Content Include="images\clientes\Mepsa.png" />
+    <Content Include="images\clientes\Milpo.png" />
+    <Content Include="images\clientes\Odebrecht.png" />
+    <Content Include="images\clientes\OHL.png" />
+    <Content Include="images\clientes\Pluspetrol.png" />
+    <Content Include="images\clientes\Queiroz Galvao.png" />
+    <Content Include="images\clientes\Repsol.png" />
+    <Content Include="images\clientes\Xstrata-Tintaya.png" />
+    <Content Include="images\clientes\Xstrata.png" />
+    <Content Include="images\clientes\Yanacocha.png" />
+    <Content Include="images\denied.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\footer_logo.jpg" />
+    <Content Include="images\inicio\etica.jpg" />
+    <Content Include="images\inicio\gaviones.jpg" />
+    <Content Include="images\inicio\hidrosiembra.jpg" />
+    <Content Include="images\inicio\historia.jpg" />
+    <Content Include="images\inicio\MapaOperaciones.jpg" />
+    <Content Include="images\inicio\perfil.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_footer.png" />
+    <Content Include="images\maquinas\especificaciones\t120.jpg" />
+    <Content Include="images\maquinas\especificaciones\t170.jpg" />
+    <Content Include="images\maquinas\especificaciones\t30.jpg" />
+    <Content Include="images\maquinas\especificaciones\t60.jpg" />
+    <Content Include="images\maquinas\especificaciones\t75.jpg" />
+    <Content Include="images\maquinas\especificaciones\t90.jpg" />
+    <Content Include="images\maquinas\header\t120.jpg" />
+    <Content Include="images\maquinas\header\t170.jpg" />
+    <Content Include="images\maquinas\header\t30.jpg" />
+    <Content Include="images\maquinas\header\t60.jpg" />
+    <Content Include="images\maquinas\header\t75.jpg" />
+    <Content Include="images\maquinas\header\T90.jpg" />
+    <Content Include="images\maquinas\T120.png" />
+    <Content Include="images\maquinas\T170.png" />
+    <Content Include="images\maquinas\T30.png" />
+    <Content Include="images\maquinas\T60.png" />
+    <Content Include="images\maquinas\T75.png" />
+    <Content Include="images\maquinas\T90.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnNext.html" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnPrevious.html" />
+    <Content Include="images\prettyPhoto\dark_rounded\contentPattern.html" />
+    <Content Include="images\prettyPhoto\dark_rounded\loader.html" />
+    <Content Include="images\prettyPhoto\dark_rounded\sprite.html" />
+    <Content Include="images\prettyPhoto\dark_square\btnNext.html" />
+    <Content Include="images\prettyPhoto\dark_square\btnPrevious.html" />
+    <Content Include="images\prettyPhoto\dark_square\loader.html" />
+    <Content Include="images\prettyPhoto\dark_square\sprite.html" />
+    <Content Include="images\prettyPhoto\default\default_thumb.html" />
+    <Content Include="images\prettyPhoto\default\loader.html" />
+    <Content Include="images\prettyPhoto\default\sprite.html" />
+    <Content Include="images\prettyPhoto\default\sprite_next.html" />
+    <Content Include="images\prettyPhoto\default\sprite_prev.html" />
+    <Content Include="images\prettyPhoto\default\sprite_x.html" />
+    <Content Include="images\prettyPhoto\default\sprite_y.html" />
+    <Content Include="images\prettyPhoto\facebook\btnNext.html" />
+    <Content Include="images\prettyPhoto\facebook\btnPrevious.html" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternBottom.html" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternLeft.html" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternRight.html" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternTop.html" />
+    <Content Include="images\prettyPhoto\facebook\default_thumbnail.html" />
+    <Content Include="images\prettyPhoto\facebook\loader.html" />
+    <Content Include="images\prettyPhoto\facebook\sprite.html" />
+    <Content Include="images\prettyPhoto\light_rounded\btnNext.html" />
+    <Content Include="images\prettyPhoto\light_rounded\btnPrevious.html" />
+    <Content Include="images\prettyPhoto\light_rounded\loader.html" />
+    <Content Include="images\prettyPhoto\light_rounded\sprite.html" />
+    <Content Include="images\prettyPhoto\light_square\btnNext.html" />
+    <Content Include="images\prettyPhoto\light_square\btnPrevious.html" />
+    <Content Include="images\prettyPhoto\light_square\sprite.html" />
+    <Content Include="images\productos\Biorrollos1.jpg" />
+    <Content Include="images\productos\Biorrollos2.jpg" />
+    <Content Include="images\productos\Biorrollos3.jpg" />
+    <Content Include="images\productos\Biorrollos4.jpg" />
+    <Content Include="images\productos\Biorrollos5.jpg" />
+    <Content Include="images\productos\Biorrollos6.jpg" />
+    <Content Include="images\productos\Gaviones1.jpg" />
+    <Content Include="images\productos\Gaviones2.jpg" />
+    <Content Include="images\productos\Gaviones3.jpg" />
+    <Content Include="images\productos\Gaviones4.jpg" />
+    <Content Include="images\productos\Gaviones5.jpg" />
+    <Content Include="images\productos\Gaviones6.jpg" />
+    <Content Include="images\productos\Geobolsas1.jpg" />
+    <Content Include="images\productos\Geobolsas2.jpg" />
+    <Content Include="images\productos\Geobolsas3.jpg" />
+    <Content Include="images\productos\Geobolsas4.jpg" />
+    <Content Include="images\productos\Geobolsas5.jpg" />
+    <Content Include="images\productos\Geocelda1.jpg" />
+    <Content Include="images\productos\Geocelda2.jpg" />
+    <Content Include="images\productos\Geocelda3.jpg" />
+    <Content Include="images\productos\Geocelda4.jpg" />
+    <Content Include="images\productos\Geocelda5.jpg" />
+    <Content Include="images\productos\Geocelda6.JPG" />
+    <Content Include="images\productos\geomantas1.jpg" />
+    <Content Include="images\productos\Geomantas2.jpg" />
+    <Content Include="images\productos\Geomantas3.jpg" />
+    <Content Include="images\productos\Geomantas4.jpg" />
+    <Content Include="images\productos\Geomantas5.jpg" />
+    <Content Include="images\productos\Geomantas6.jpg" />
+    <Content Include="images\productos\Geotextil1.jpg" />
+    <Content Include="images\productos\Geotextil2.jpg" />
+    <Content Include="images\productos\Geotextil3.jpg" />
+    <Content Include="images\productos\Geotextil4.jpg" />
+    <Content Include="images\productos\Geotextil5.jpg" />
+    <Content Include="images\productos\hydrogel.png" />
+    <Content Include="images\productos\Mantas_organicas1.jpg" />
+    <Content Include="images\productos\Mantas_organicas2.jpg" />
+    <Content Include="images\productos\Mantas_organicas3.jpg" />
+    <Content Include="images\productos\Mantas_organicas4.jpg" />
+    <Content Include="images\productos\Mantas_organicas5.jpg" />
+    <Content Include="images\productos\Semillas1.jpg" />
+    <Content Include="images\productos\Semillas2.jpg" />
+    <Content Include="images\productos\Semillas3.jpg" />
+    <Content Include="images\productos\Semillas4.jpg" />
+    <Content Include="images\productos\Semillas5.jpg" />
+    <Content Include="images\productos\Semillas6.jpg" />
+    <Content Include="images\productos\Semillas7.jpg" />
+    <Content Include="images\representaciones\bonterra.png" />
+    <Content Include="images\representaciones\dirtglue.png" />
+    <Content Include="images\representaciones\finn.png" />
+    <Content Include="images\representaciones\geoverde.png" />
+    <Content Include="images\servicios\consultoria_ambiental.jpg" />
+    <Content Include="images\servicios\consultoria_ambiental\1.jpg" />
+    <Content Include="images\servicios\control_erosion.jpg" />
+    <Content Include="images\servicios\control_erosion\1.jpg" />
+    <Content Include="images\servicios\control_erosion\2.jpg" />
+    <Content Include="images\servicios\control_erosion\3.jpg" />
+    <Content Include="images\servicios\control_erosion\4.jpg" />
+    <Content Include="images\servicios\control_erosion\5.jpg" />
+    <Content Include="images\servicios\control_polvo.jpg" />
+    <Content Include="images\servicios\control_polvo\1.png" />
+    <Content Include="images\servicios\control_polvo\2.jpg" />
+    <Content Include="images\servicios\control_polvo\3.jpg" />
+    <Content Include="images\servicios\control_polvo\4.jpg" />
+    <Content Include="images\servicios\control_polvo\5.jpg" />
+    <Content Include="images\servicios\hidrosiembra.jpg" />
+    <Content Include="images\servicios\hidrosiembra\1.JPG" />
+    <Content Include="images\servicios\hidrosiembra\10.JPG" />
+    <Content Include="images\servicios\hidrosiembra\11.JPG" />
+    <Content Include="images\servicios\hidrosiembra\12.JPG" />
+    <Content Include="images\servicios\hidrosiembra\13.JPG" />
+    <Content Include="images\servicios\hidrosiembra\2.JPG" />
+    <Content Include="images\servicios\hidrosiembra\3.JPG" />
+    <Content Include="images\servicios\hidrosiembra\4.JPG" />
+    <Content Include="images\servicios\hidrosiembra\6.jpg" />
+    <Content Include="images\servicios\hidrosiembra\7.jpg" />
+    <Content Include="images\servicios\hidrosiembra\8.jpg" />
+    <Content Include="images\servicios\hidrosiembra\9.JPG" />
+    <Content Include="images\servicios\reforestacion.JPG" />
+    <Content Include="images\servicios\reforestacion\1.JPG" />
+    <Content Include="images\servicios\reforestacion\2.jpg" />
+    <Content Include="images\servicios\reforestacion\3.JPG" />
+    <Content Include="images\servicios\reforestacion\4-.jpg" />
+    <Content Include="images\servicios\reforestacion\5-.jpg" />
+    <Content Include="images\servicios\reforestacion\6.jpg" />
+    <Content Include="images\servicios\reforestacion\7.jpg" />
+    <Content Include="images\servicios\relleno_sanitario.jpg" />
+    <Content Include="images\servicios\relleno_sanitario\1.jpg" />
+    <Content Include="images\servicios\relleno_sanitario\2.jpg" />
+    <Content Include="images\servicios\relleno_sanitario\3.jpg" />
+    <Content Include="images\servicios\relleno_sanitario\4.jpg" />
+    <Content Include="images\servicios\revegetacion.jpg" />
+    <Content Include="images\servicios\revegetacion\1.jpg" />
+    <Content Include="images\servicios\revegetacion\2.jpg" />
+    <Content Include="images\servicios\revegetacion\3.jpg" />
+    <Content Include="images\servicios\revegetacion\4.jpg" />
+    <Content Include="images\servicios\revegetacion\5.jpg" />
+    <Content Include="images\servicios\revegetacion\6.jpg" />
+    <Content Include="images\servicios\revegetacion\7.jpg" />
+    <Content Include="images\servicios\revegetacion\8.jpg" />
+    <Content Include="images\slider\1.JPG" />
+    <Content Include="images\slider\arbol.png" />
+    <Content Include="images\slider\arbol2.png" />
+    <Content Include="images\slider\arbol3.png" />
+    <Content Include="images\slider\arbol4.png" />
+    <Content Include="images\slider\grass.png" />
+    <Content Include="images\social\facebook.png" />
+    <Content Include="images\social\linkedin.png" />
+    <Content Include="img\author.png" />
+    <Content Include="img\back_to_top.png" />
+    <Content Include="img\category.png" />
+    <Content Include="img\category1.png" />
+    <Content Include="img\comments.png" />
+    <Content Include="img\date.png" />
+    <Content Include="img\date1.png" />
+    <Content Include="img\discount.png" />
+    <Content Include="img\dots.png" />
+    <Content Include="img\gallery.png" />
+    <Content Include="img\link.png" />
+    <Content Include="img\list-tweet.png" />
+    <Content Include="img\list-type1.png" />
+    <Content Include="img\list-type2.png" />
+    <Content Include="img\magnifier-white.png" />
+    <Content Include="img\magnifier.png" />
+    <Content Include="img\marble-normal.gif" />
+    <Content Include="img\marble-normal.png" />
+    <Content Include="img\marble-semi-light.png" />
+    <Content Include="img\member-bg.png" />
+    <Content Include="img\menu-bg.png" />
+    <Content Include="img\menu-btn.png" />
+    <Content Include="img\next.png" />
+    <Content Include="img\prev.png" />
+    <Content Include="img\quote.png" />
+    <Content Include="img\quotes.png" />
+    <Content Include="img\read-more.png" />
+    <Content Include="img\search.png" />
+    <Content Include="img\single-tweet.png" />
+    <Content Include="img\skillbar2.png" />
+    <Content Include="img\socials%402x.png" />
+    <Content Include="img\socials.png" />
+    <Content Include="img\sprite%402x.png" />
+    <Content Include="img\sprite.png" />
+    <Content Include="img\teaser-icon1.png" />
+    <Content Include="img\teaser-icon2.png" />
+    <Content Include="img\teaser-icon3.png" />
+    <Content Include="img\testimonial-helper.png" />
+    <Content Include="img\wous2-overlay.png" />
+    <Content Include="inicio.aspx" />
+    <Content Include="js\comment-reply.min.js" />
+    <Content Include="js\front-subscribersfc3c.js" />
+    <Content Include="js\grayscale.js" />
+    <Content Include="js\jquery.bxslider.min.js" />
+    <Content Include="js\jquery.flexslider-min.js" />
+    <Content Include="js\jquery.isotope.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\jquery.themepunch.revolution.min.js" />
+    <Content Include="js\jquery.validationEngine-enfc3c.js" />
+    <Content Include="js\jquery.validationEnginefc3c.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\retina.js" />
+    <Content Include="js\shortcodes.js" />
+    <Content Include="js\zozo.tabs.js" />
+    <Content Include="maquinas.aspx" />
+    <Content Include="obras.aspx" />
+    <Content Include="productos.aspx" />
+    <Content Include="representaciones.aspx" />
+    <Content Include="servicios.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="_maquinas\t120.aspx" />
+    <Content Include="_maquinas\t170.aspx" />
+    <Content Include="_maquinas\t30.aspx" />
+    <Content Include="_maquinas\t60.aspx" />
+    <Content Include="_maquinas\t75.aspx" />
+    <Content Include="_maquinas\t90.aspx" />
+    <Content Include="_nosotros\etica.aspx" />
+    <Content Include="_nosotros\historia.aspx" />
+    <Content Include="_nosotros\perfil.aspx" />
+    <Content Include="_productos\biorollos-biobolsas.aspx" />
+    <Content Include="_productos\gaviones-geotextiles.aspx" />
+    <Content Include="_productos\geoceldas.aspx" />
+    <Content Include="_productos\hydrogel.aspx" />
+    <Content Include="_productos\insumo-hidrosiembra.aspx" />
+    <Content Include="_productos\mantas-organicas-geomantas.aspx" />
+    <Content Include="_servicios\consultoria-ambiental.aspx" />
+    <Content Include="_servicios\control-erosion.aspx" />
+    <Content Include="_servicios\control-polvo.aspx" />
+    <Content Include="_servicios\hidrosiembra.aspx" />
+    <Content Include="_servicios\reforestacion.aspx" />
+    <Content Include="_servicios\relleno-sanitario.aspx" />
+    <Content Include="_servicios\revegetacion.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="contacto.aspx.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contacto.aspx.designer.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.aspx.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inicio.aspx.designer.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maquinas.aspx.cs">
+      <DependentUpon>maquinas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maquinas.aspx.designer.cs">
+      <DependentUpon>maquinas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obras.aspx.cs">
+      <DependentUpon>obras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obras.aspx.designer.cs">
+      <DependentUpon>obras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productos.aspx.cs">
+      <DependentUpon>productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productos.aspx.designer.cs">
+      <DependentUpon>productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="representaciones.aspx.cs">
+      <DependentUpon>representaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="representaciones.aspx.designer.cs">
+      <DependentUpon>representaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="servicios.aspx.cs">
+      <DependentUpon>servicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="servicios.aspx.designer.cs">
+      <DependentUpon>servicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site.master.cs">
+      <DependentUpon>site.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site.master.designer.cs">
+      <DependentUpon>site.master</DependentUpon>
+    </Compile>
+    <Compile Include="_maquinas\t120.aspx.cs">
+      <DependentUpon>t120.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_maquinas\t120.aspx.designer.cs">
+      <DependentUpon>t120.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_maquinas\t170.aspx.cs">
+      <DependentUpon>t170.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_maquinas\t170.aspx.designer.cs">
+      <DependentUpon>t170.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_maquinas\t30.aspx.cs">
+      <DependentUpon>t30.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_maquinas\t30.aspx.designer.cs">
+      <DependentUpon>t30.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_maquinas\t60.aspx.cs">
+      <DependentUpon>t60.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_maquinas\t60.aspx.designer.cs">
+      <DependentUpon>t60.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_maquinas\t75.aspx.cs">
+      <DependentUpon>t75.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_maquinas\t75.aspx.designer.cs">
+      <DependentUpon>t75.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_maquinas\t90.aspx.cs">
+      <DependentUpon>t90.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_maquinas\t90.aspx.designer.cs">
+      <DependentUpon>t90.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_nosotros\etica.aspx.cs">
+      <DependentUpon>etica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_nosotros\etica.aspx.designer.cs">
+      <DependentUpon>etica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_nosotros\historia.aspx.cs">
+      <DependentUpon>historia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_nosotros\historia.aspx.designer.cs">
+      <DependentUpon>historia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_nosotros\perfil.aspx.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_nosotros\perfil.aspx.designer.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_productos\biorollos-biobolsas.aspx.cs">
+      <DependentUpon>biorollos-biobolsas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_productos\biorollos-biobolsas.aspx.designer.cs">
+      <DependentUpon>biorollos-biobolsas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_productos\gaviones-geotextiles.aspx.cs">
+      <DependentUpon>gaviones-geotextiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_productos\gaviones-geotextiles.aspx.designer.cs">
+      <DependentUpon>gaviones-geotextiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_productos\geoceldas.aspx.cs">
+      <DependentUpon>geoceldas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_productos\geoceldas.aspx.designer.cs">
+      <DependentUpon>geoceldas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_productos\hydrogel.aspx.cs">
+      <DependentUpon>hydrogel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_productos\hydrogel.aspx.designer.cs">
+      <DependentUpon>hydrogel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_productos\insumo-hidrosiembra.aspx.cs">
+      <DependentUpon>insumo-hidrosiembra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_productos\insumo-hidrosiembra.aspx.designer.cs">
+      <DependentUpon>insumo-hidrosiembra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_productos\mantas-organicas-geomantas.aspx.cs">
+      <DependentUpon>mantas-organicas-geomantas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_productos\mantas-organicas-geomantas.aspx.designer.cs">
+      <DependentUpon>mantas-organicas-geomantas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_servicios\consultoria-ambiental.aspx.cs">
+      <DependentUpon>consultoria-ambiental.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_servicios\consultoria-ambiental.aspx.designer.cs">
+      <DependentUpon>consultoria-ambiental.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_servicios\control-erosion.aspx.cs">
+      <DependentUpon>control-erosion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_servicios\control-erosion.aspx.designer.cs">
+      <DependentUpon>control-erosion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_servicios\control-polvo.aspx.cs">
+      <DependentUpon>control-polvo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_servicios\control-polvo.aspx.designer.cs">
+      <DependentUpon>control-polvo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_servicios\hidrosiembra.aspx.cs">
+      <DependentUpon>hidrosiembra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_servicios\hidrosiembra.aspx.designer.cs">
+      <DependentUpon>hidrosiembra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_servicios\reforestacion.aspx.cs">
+      <DependentUpon>reforestacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_servicios\reforestacion.aspx.designer.cs">
+      <DependentUpon>reforestacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_servicios\relleno-sanitario.aspx.cs">
+      <DependentUpon>relleno-sanitario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_servicios\relleno-sanitario.aspx.designer.cs">
+      <DependentUpon>relleno-sanitario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_servicios\revegetacion.aspx.cs">
+      <DependentUpon>revegetacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_servicios\revegetacion.aspx.designer.cs">
+      <DependentUpon>revegetacion.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="site.master" />
+    <Content Include="class\tmhOAuth.php" />
+    <Content Include="class\tmhUtilities.php" />
+    <Content Include="pdf\productos\MSDS_Adherente.pdf" />
+    <Content Include="pdf\productos\MSDS_Bioestimulante.pdf" />
+    <Content Include="pdf\productos\MSDS_Fertilizante.pdf" />
+    <Content Include="pdf\productos\MSDS_Fibra_de_madera.pdf" />
+    <Content Include="pdf\productos\MSDS_Hydrogel.pdf" />
+    <Content Include="pdf\productos\Ficha_Técnica_Mantas_Orgánicas.pdf" />
+    <Content Include="pdf\productos\Ficha_Técnica_Geocelda.pdf" />
+    <Content Include="pdf\productos\Ficha_Técnica_Biorrollo.pdf" />
+    <Content Include="pdf\productos\Ficha_Técnica_Geobolsas.pdf" />
+    <Content Include="pdf\maquinas\T120.pdf" />
+    <Content Include="pdf\maquinas\T170.pdf" />
+    <Content Include="pdf\maquinas\T30.pdf" />
+    <Content Include="pdf\maquinas\T60.pdf" />
+    <Content Include="pdf\maquinas\T75.pdf" />
+    <Content Include="pdf\maquinas\ingles\T120.pdf" />
+    <Content Include="pdf\maquinas\ingles\T170.pdf" />
+    <Content Include="pdf\maquinas\ingles\T30.pdf" />
+    <Content Include="pdf\maquinas\ingles\T60.pdf" />
+    <Content Include="pdf\maquinas\ingles\T75.pdf" />
+    <Content Include="pdf\maquinas\ingles\T90.pdf" />
+    <Content Include="pdf\maquinas\T90.pdf" />
+    <Content Include="pdf\obras\Control de erosión en la Carretera Ayacucho-Abancay Tramo III.pdf" />
+    <Content Include="pdf\obras\Control de erosión en Pasco- Compañía Minera Milpo.pdf" />
+    <Content Include="pdf\obras\Experiencia de Hidrosiembra en Ayacucho .pdf" />
+    <Content Include="pdf\obras\Hidrosiembra directa y con biomanta- Compañía Minera Lumina Copper.pdf" />
+    <Content Include="pdf\obras\Hidrosiembra en Sector Las Vegas- Consorcio Puente Chino.pdf" />
+    <Content Include="pdf\obras\Hidrosiembra en Terramesh- Parque Letonia- Miraflores.pdf" />
+    <Content Include="pdf\obras\Revegetación de taludes en Cusco- Corredor Vial Interoceánico Sur.pdf" />
+    <Content Include="font\fontawesome-webfont.eot" />
+    <Content Include="font\fontawesome-webfont.ttf" />
+    <Content Include="font\fontawesome-webfont.woff" />
+    <Content Include="font\FontAwesome.otf" />
+    <Content Include="pdf\obras\Hidrosiembra en Kepashiato.pdf" />
+    <Content Include="pdf\servicios\hidrosiembra\Beneficios de la Hidrosiembra.pdf" />
+    <Content Include="pdf\servicios\hidrosiembra\Qué es la Hidrosiembra.pdf" />
+    <Content Include="pdf\servicios\hidrosiembra\Hidrosiembra restauración del paisaje.pdf" />
+    <Content Include="pdf\servicios\hidrosiembra\Hidrosiembra, estabilización de taludes.pdf" />
+    <Content Include="pdf\servicios\hidrosiembra\Hidrosiembra, germinación de semillas con portada.pdf" />
+    <Content Include="pdf\servicios\hidrosiembra\Hidrosiembra vs. siembra regular.pdf" />
+    <Content Include="pdf\servicios\hidrosiembra\Usos de Hidrosiembra.pdf" />
+    <Content Include="pdf\servicios\control_erosion\Problema La erosión.pdf" />
+    <Content Include="pdf\servicios\relleno_sanitario\Criterios ambientales en rellenos sanitarios.pdf" />
+    <Content Include="pdf\obras\Experiencia Aplicación de Hidrosiembra en Multifamiliar en Pachacamac.pdf" />
+    <Content Include="pdf\obras\Hidrosiembra en Pachamac_2015_Los Portales.pdf" />
+    <Content Include="pdf\obras\Forestación Chilca.pdf" />
+    <Content Include="pdf\productos\catalogo\Catálogo de productos N°1.pdf" />
+    <Content Include="pdf\productos\catalogo\Catálogo de productos N°2.pdf" />
+    <Content Include="pdf\productos\catalogo\Catálogo de productos N°3.pdf" />
+    <None Include="Properties\PublishProfiles\Publish.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dendro.Website2.BL.BC\Dendro.Website2.BL.BC.csproj">
+      <Project>{9b4e5475-b097-4127-903a-5eb0bcc6fa5c}</Project>
+      <Name>Dendro.Website2.BL.BC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dendro.Website2.BL.BE\Dendro.Website2.BL.BE.csproj">
+      <Project>{be58c18c-6262-41e8-92b5-ae70cc4ccd51}</Project>
+      <Name>Dendro.Website2.BL.BE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12683</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12683/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
